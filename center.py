@@ -67,7 +67,6 @@ def initialize_mission(content):
         temp = line.split(" ")
         MISSION[id] = [id,int(temp[0]),int(temp[1]),float(temp[2])]
         id += 1
-    f.close()
 
 def initialize_flight():
     global FLIGHT
