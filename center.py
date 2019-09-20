@@ -83,7 +83,7 @@ def load_file():
 def init_center():
     global MISSION_A
     global MISSION_B
-    global TODOLIST
+    global TODO_LIST
     global PATH
     MISSION_A = []
     MISSION_B = []
@@ -153,6 +153,7 @@ def generate_route(a, b):
 
 # handle each mission
 def handle_each_mission(ID):
+    print("handling mission ", ID)
     position = []
     # prepare for the algorithm
     for j in range(NUM_OF_FLIGHT):
